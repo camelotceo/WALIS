@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="js/jqm/jquery.mobile.css" />
+  <title>WALIS</title>
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jqm/jquery.mobile.js"></script>
+  <script type="text/javascript" src="js/my.js"></script>
+  <script type="text/javascript" src="cordova-2.3.0.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <!-- User-generated css -->
+  <style>
+    
+  </style>
+
+  <!-- User-generated js -->
+  <script>
+    $(function() {
+        
+    });
+  </script>
+</head>
+<body>
+  <!-- Home -->
+  <div data-role="page" id="page1">
+      <div data-theme="b" data-role="header" data-position="fixed">
+          <h3 id="hdr">
+              W.A.L.I.S
+          </h3>
+          <div id="tabs_footer" data-role="tabbar" data-iconpos="bottom" data-theme="b">
+              <ul>
+                  <li>
+                      <a href="#page3" data-transition="slidefade" data-theme="" data-icon="search">
+                          Warrants
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page4" data-transition="slidefade" data-theme="" data-icon="grid">
+                          Arrests
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page5" data-transition="slidefade" data-theme="" data-icon="info">
+                          License
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div data-role="content">
+          <div style=" text-align:center" id="img_walis">
+              <img id="img_walis" style="width: 148px; height: 194px" src="http://assets.codiqa.com/lKSHLBf9Rhe9pyo8Oisk_WALIS.png">
+          </div>
+          <div>
+              <p>
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p style="text-align: center;">
+                  <b>
+                      Know Your Status With W.A.L.I.S
+                  </b>
+              </p>
+          </div>
+          <div>
+              <p>
+                  <span style="font-size: small;">
+                      *Note: WALIS assumes no responsibilty for the results of your search.
+                      All results are current and public information from the respective agencies.
+                  </span>
+              </p>
+          </div>
+      </div>
+  </div>
+  <!-- Warrants -->
+  <div data-role="page" data-theme="b" id="page3">
+      <div data-theme="b" data-role="header" data-position="fixed">
+          <a id="btn_warrants_back" data-role="button" href="#page1" data-icon="home"
+          data-iconpos="notext" class="ui-btn-left">
+              Home
+          </a>
+          <h3 id="hdr">
+              W.A.L.I.S
+          </h3>
+          <div id="tabs_footer" data-role="tabbar" data-iconpos="bottom" data-theme="b">
+              <ul>
+                  <li>
+                      <a href="#page3" data-transition="slidefade" data-theme="" data-icon="search">
+                          Warrants
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page4" data-transition="slidefade" data-theme="" data-icon="grid">
+                          Arrests
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page5" data-transition="slidefade" data-theme="" data-icon="info">
+                          License
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div data-role="content">
+          <div style=" text-align:center" id="img_walis">
+              <img id="img_walis" style="width: 25%; height: 25%" src="http://assets.codiqa.com/lKSHLBf9Rhe9pyo8Oisk_WALIS.png">
+          </div>
+          <h2 id="hdr_warrants">
+              Warrants
+          </h2>
+          <form action="">
+              <div data-role="fieldcontain" id="warrants_firstName">
+                  <fieldset data-role="controlgroup" data-mini="true">
+                      <label for="warrants_firstName">
+                      </label>
+                      <input name="warrants_firstName" id="warrants_firstName" placeholder="First Name"
+                      value="" type="text">
+                  </fieldset>
+              </div>
+              <div data-role="fieldcontain" id="warrants_lastName">
+                  <fieldset data-role="controlgroup" data-mini="true">
+                      <label for="warrants_lastName">
+                      </label>
+                      <input name="warrants_lastName" id="warrants_lastName" placeholder="Last Name"
+                      value="" type="text">
+                  </fieldset>
+              </div>
+              <div data-role="fieldcontain" id="warrants_age">
+                  <fieldset data-role="controlgroup" data-mini="true">
+                      <label for="warrants_age">
+                      </label>
+                      <input name="warrants_age" id="warrants_age" placeholder="age" value="Age"
+                      type="text">
+                  </fieldset>
+              </div>
+              <input id="btnSearchWarrants" type="submit" data-theme="b" value="Search Warrants"
+              data-mini="true">
+          </form>
+      </div>
+  </div>
+  <!-- Arrests -->
+  <div data-role="page" data-theme="b" id="page4">
+      <div data-theme="b" data-role="header" data-position="fixed">
+          <a id="btn_warrants_back" data-role="button" href="#page1" data-icon="home"
+          data-iconpos="notext" class="ui-btn-left">
+              Home
+          </a>
+          <h3 id="hdr">
+              W.A.L.I.S
+          </h3>
+          <div id="tabs_footer" data-role="tabbar" data-iconpos="bottom" data-theme="b">
+              <ul>
+                  <li>
+                      <a href="#page3" data-transition="slidefade" data-theme="" data-icon="search">
+                          Warrants
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page4" data-transition="slidefade" data-theme="" data-icon="grid">
+                          Arrests
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page5" data-transition="slidefade" data-theme="" data-icon="info">
+                          License
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div data-role="content">
+          <div style=" text-align:center" id="img_walis">
+              <img id="img_walis" style="width: 25%; height: 25%" src="http://assets.codiqa.com/lKSHLBf9Rhe9pyo8Oisk_WALIS.png">
+          </div>
+          <h2 id="hdr_arrests">
+              Arrests
+          </h2>
+          <form action="">
+              <div data-role="fieldcontain" id="warrants_firstName">
+                  <fieldset data-role="controlgroup" data-mini="true">
+                      <label for="warrants_firstName">
+                      </label>
+                      <input name="warrants_firstName" id="warrants_firstName" placeholder="First Name"
+                      value="" type="text">
+                  </fieldset>
+              </div>
+              <div data-role="fieldcontain" id="warrants_lastName">
+                  <fieldset data-role="controlgroup" data-mini="true">
+                      <label for="warrants_lastName">
+                      </label>
+                      <input name="warrants_lastName" id="warrants_lastName" placeholder="Last Name"
+                      value="" type="text">
+                  </fieldset>
+              </div>
+              <input id="btnSearchArrests" type="submit" data-theme="b" value="Search Arrests"
+              data-mini="true">
+          </form>
+      </div>
+  </div>
+  <!-- Driver License -->
+  <div data-role="page" data-theme="b" id="page5">
+      <div data-theme="b" data-role="header" data-position="fixed">
+          <a id="btn_warrants_back" data-role="button" href="#page1" data-icon="home"
+          data-iconpos="notext" class="ui-btn-left">
+              Home
+          </a>
+          <h3 id="hdr">
+              W.A.L.I.S
+          </h3>
+          <div id="tabs_footer" data-role="tabbar" data-iconpos="bottom" data-theme="b">
+              <ul>
+                  <li>
+                      <a href="#page3" data-transition="slidefade" data-theme="" data-icon="search">
+                          Warrants
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page4" data-transition="slidefade" data-theme="" data-icon="grid">
+                          Arrests
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page5" data-transition="slidefade" data-theme="" data-icon="info">
+                          License
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div data-role="content">
+          <div style=" text-align:center" id="img_walis">
+              <img id="img_walis" style="width: 25%; height: 25%" src="http://assets.codiqa.com/lKSHLBf9Rhe9pyo8Oisk_WALIS.png">
+          </div>
+          <h2 id="hdr_driverlicense">
+              Driver License
+          </h2>
+          <form action="">
+              <div data-role="fieldcontain" id="DriverLicenseNumber">
+                  <fieldset data-role="controlgroup" data-mini="true">
+                      <label for="DriverLicenseNumber">
+                      </label>
+                      <input name="DriverLicenseNumber" id="DriverLicenseNumber" placeholder="License Number"
+                      value="" type="text">
+                  </fieldset>
+              </div>
+              <input id="btnSearchLicense" type="submit" data-theme="b" value="Check Status"
+              data-mini="true">
+          </form>
+      </div>
+  </div>
+  <!-- Search Results -->
+  <div data-role="page" data-theme="b" id="page_results">
+      <div data-theme="b" data-role="header" data-position="fixed">
+          <h3 id="hdr">
+              W.A.L.I.S
+          </h3>
+          <div id="tabs_footer" data-role="tabbar" data-iconpos="bottom" data-theme="b">
+              <ul>
+                  <li>
+                      <a href="#page3" data-transition="slidefade" data-theme="" data-icon="search">
+                          Warrants
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page4" data-transition="slidefade" data-theme="" data-icon="grid">
+                          Arrests
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page5" data-transition="slidefade" data-theme="" data-icon="info">
+                          License
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div data-role="content">
+          <div style=" text-align:right" id="img_walis">
+              <img id="img_walis" style="width: 15%; height: 15%" src="http://assets.codiqa.com/lKSHLBf9Rhe9pyo8Oisk_WALIS.png">
+          </div>
+          <div>
+              <p>
+                  <b>
+                      Search Results
+                  </b>
+              </p>
+          </div>
+          <div>
+              <p>
+                  <span style="font-size: small;" data-mce-style="font-size: small;">
+                      *Disclaimer: All results are current public information from the respective
+                      agencies.&nbsp;
+                  </span>
+              </p>
+          </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+</body>
+</html>
